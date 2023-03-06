@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content" app:layout_marginBaseline="8dp"
+                                   android:layout_margin="8dp" app:cardCornerRadius="8dp" app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+        <ImageView
+                android:layout_width="380dp"
+                android:layout_height="179dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                android:id="@+id/iV_picture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal" android:layout_marginTop="12dp"
+                app:layout_constraintHorizontal_bias="0.496"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp" app:layout_constraintTop_toBottomOf="@+id/iV_picture"
+                android:id="@+id/lL_CardInfos">
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tV_authorName"
+                    android:layout_marginTop="12dp"
+                    tools:text="Author Name" android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_gravity="center"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tV_likes"
+                    tools:text="115 likes" android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
